@@ -1,8 +1,8 @@
 [
  {
-  "input": "The game Wurdle has gone pretty viral in the last month or two, and never one to overlook an opportunity for a math lesson, it occurs to me that this game makes for a very good central example in a lesson about information theory, and in particular a topic known as entropy.",
+  "input": "The game wordle has gone pretty viral in the last month or two, and never one to overlook an opportunity for a math lesson, it occurs to me that this game makes for a very good central example in a lesson about information theory, and in particular a topic known as entropy.",
   "model": "nmt",
-  "translatedText": "Das Spiel Wurdle ist in den letzten ein, zwei Monaten ziemlich viral gegangen, und da ich nie eine Gelegenheit für eine Mathematikstunde ausgelassen habe, kommt mir der Gedanke, dass dieses Spiel ein sehr gutes zentrales Beispiel in einer Lektion über Informationstheorie und insbesondere Informationstheorie darstellt ein Thema, das als Entropie bekannt ist.",
+  "translatedText": "Das Spiel Wordle hat sich in den letzten ein oder zwei Monaten ziemlich verbreitet, und da ich nie eine Gelegenheit für einen Matheunterricht übersehe, kam mir der Gedanke, dass dieses Spiel ein sehr gutes zentrales Beispiel für eine Unterrichtsstunde über Informationstheorie und insbesondere über das Thema Entropie ist",
   "time_range": [
    0.0,
    12.66
@@ -11,7 +11,7 @@
  {
   "input": "You see, like a lot of people I got kind of sucked into the puzzle, and like a lot of programmers I also got sucked into trying to write an algorithm that would play the game as optimally as it could.",
   "model": "nmt",
-  "translatedText": "Sehen Sie, wie viele Leute wurde auch ich in das Rätsel hineingezogen, und wie viele Programmierer wurde auch ich in den Versuch hineingezogen, einen Algorithmus zu schreiben, der das Spiel so optimal wie möglich abspielt.",
+  "translatedText": "Wie viele Leute bin ich in das Rätsel hineingezogen worden, und wie viele Programmierer habe ich versucht, einen Algorithmus zu schreiben, der das Spiel so optimal wie möglich spielen würde.",
   "time_range": [
    13.92,
    22.74
@@ -20,16 +20,16 @@
  {
   "input": "And what I thought I'd do here is just talk through with you some of my process in that, and explain some of the math that went into it, since the whole algorithm centers on this idea of entropy.",
   "model": "nmt",
-  "translatedText": "Und ich dachte, ich würde hier einfach mit Ihnen einige meiner Prozesse besprechen und einige der darin enthaltenen Mathematik erklären, da der gesamte Algorithmus auf dieser Idee der Entropie basiert.",
+  "translatedText": "Und ich dachte mir, dass ich hier einfach mit Ihnen einige meiner Prozesse besprechen und einige der darin enthaltenen Mathematik erklären werde, da der gesamte Algorithmus auf dieser Idee der Entropie basiert.",
   "time_range": [
    23.18,
    31.08
   ]
  },
  {
-  "input": "First things first, in case you haven't heard of it, what is Wurdle?",
+  "input": "First things first, in case you haven't heard of it, what is wordle?",
   "model": "nmt",
-  "translatedText": "Das Wichtigste zuerst: Falls Sie noch nichts davon gehört haben: Was ist Wurdle?",
+  "translatedText": "Das Wichtigste zuerst: Falls Sie noch nichts davon gehört haben: Was ist Wordle?",
   "time_range": [
    38.7,
    41.64
@@ -38,34 +38,34 @@
  {
   "input": "And to kill two birds with one stone here while we go through the rules of the game, let me also preview where we're going with this, which is to develop a little algorithm that will basically play the game for us.",
   "model": "nmt",
-  "translatedText": "Und um hier zwei Fliegen mit einer Klappe zu schlagen, während wir die Spielregeln durchgehen, möchte ich auch eine Vorschau darauf geben, wohin wir damit gehen, nämlich einen kleinen Algorithmus zu entwickeln, der das Spiel im Grunde für uns spielt.",
+  "translatedText": "Und um hier zwei Fliegen mit einer Klappe zu schlagen, während wir die Spielregeln durchgehen, möchte ich auch eine Vorschau darauf geben, wohin es hinausläuft, nämlich einen kleinen Algorithmus zu entwickeln, der das Spiel im Grunde für uns spielt.",
   "time_range": [
    42.04,
    51.04
   ]
  },
  {
-  "input": "Though I haven't done today's Wurdle, this is February 4th, and we'll see how the bot does.",
+  "input": "Though I haven't done today's wordle, this is February 4th, and we'll see how the bot does.",
   "model": "nmt",
-  "translatedText": "Obwohl ich das heutige Wurdle noch nicht gemacht habe, ist es der 4. Februar und wir werden sehen, wie sich der Bot schlägt.",
+  "translatedText": "Obwohl ich das heutige Wordle noch nicht gemacht habe, heute ist es der 4. Februar und wir werden sehen, wie sich der Bot schlägt.",
   "time_range": [
    51.36,
    55.1
   ]
  },
  {
-  "input": "The goal of Wurdle is to guess a mystery five letter word, and you're given six different chances to guess.",
+  "input": "The goal of wordle is to guess a mystery five letter word, and you're given six different chances to guess.",
   "model": "nmt",
-  "translatedText": "Das Ziel von Wurdle ist es, ein geheimnisvolles Wort mit fünf Buchstaben zu erraten, und Sie haben sechs verschiedene Möglichkeiten, es zu erraten.",
+  "translatedText": "Das Ziel von wordle ist es, ein geheimnisvolles Wort mit fünf Buchstaben zu erraten, und du hast sechs verschiedene Chancen, es zu erraten",
   "time_range": [
    55.48,
    60.34
   ]
  },
  {
-  "input": "For example, my Wurdle bot suggests that I start with the guess crane.",
+  "input": "For example, my wordle bot suggests that I start with the guess "crane".",
   "model": "nmt",
-  "translatedText": "Beispielsweise schlägt mein Wurdle-Bot vor, dass ich mit dem Ratekran beginne.",
+  "translatedText": "Beispielsweise schlägt mein Wordle-Bot vor, dass ich mit dem Wort "crane" beginne.",
   "time_range": [
    60.84,
    64.38
@@ -74,7 +74,7 @@
  {
   "input": "Each time that you make a guess, you get some information about how close your guess is to the true answer.",
   "model": "nmt",
-  "translatedText": "Jedes Mal, wenn Sie eine Vermutung anstellen, erhalten Sie Informationen darüber, wie nah Ihre Vermutung an der wahren Antwort ist.",
+  "translatedText": "Jedes Mal, wenn Sie raten, erhalten Sie eine Information darüber, wie nahe Ihre Lösung an der richtigen Antwort liegt.",
   "time_range": [
    65.18,
    70.22
@@ -101,7 +101,7 @@
  {
   "input": "The green box is telling me that the secret word does have an A, and it's in the third position.",
   "model": "nmt",
-  "translatedText": "Das grüne Kästchen sagt mir, dass das geheime Wort ein A hat und an dritter Stelle steht.",
+  "translatedText": "Das grüne Kästchen sagt mir, dass das geheime Wort ein A enthält, und zwar an der dritten Stelle.",
   "time_range": [
    78.24,
    82.24
@@ -117,9 +117,9 @@
   ]
  },
  {
-  "input": "So let me just go in and tell the Wurdle bot that information.",
+  "input": "So let me just go in and tell the wordle bot that information.",
   "model": "nmt",
-  "translatedText": "Lassen Sie mich einfach hineingehen und dem Wurdle-Bot diese Informationen mitteilen.",
+  "translatedText": "Lassen Sie mich einfach kurz dem Wordle-Bot diese Informationen mitteilen.",
   "time_range": [
    85.2,
    87.34
@@ -128,7 +128,7 @@
  {
   "input": "We started with crane, we got grey, yellow, green, grey, grey.",
   "model": "nmt",
-  "translatedText": "Wir fingen mit dem Kranich an, wir bekamen Grau, Gelb, Grün, Grau, Grau.",
+  "translatedText": "Wir fingen mit "crane" an und bekommen als Antwort Grau, Gelb, Grün, Grau, Grau.",
   "time_range": [
    87.34,
    90.32
@@ -137,7 +137,7 @@
  {
   "input": "Don't worry about all the data that it's showing right now, I'll explain that in due time.",
   "model": "nmt",
-  "translatedText": "Machen Sie sich keine Sorgen wegen all der Daten, die gerade angezeigt werden, ich werde das zu gegebener Zeit erklären.",
+  "translatedText": "Mach dir keine Sorgen über die Daten, die gerade angezeigt werden, das erkläre ich zu gegebener Zeit.",
   "time_range": [
    91.42,
    94.94
@@ -146,7 +146,7 @@
  {
   "input": "But its top suggestion for our second pick is shtick.",
   "model": "nmt",
-  "translatedText": "Aber sein Top-Vorschlag für unsere zweite Wahl ist shtick.",
+  "translatedText": "Sein Top-Vorschlag für unsere zweite Wahl ist "shtick".",
   "time_range": [
    95.46,
    98.82
@@ -155,7 +155,7 @@
  {
   "input": "And your guess does have to be an actual five letter word, but as you'll see, it's pretty liberal with what it will actually let you guess.",
   "model": "nmt",
-  "translatedText": "Und Ihre Vermutung muss tatsächlich ein Wort mit fünf Buchstaben sein, aber wie Sie sehen werden, ist es ziemlich großzügig, was Sie tatsächlich erraten lässt.",
+  "translatedText": "Und du musst ein Wort mit fünf Buchstaben erraten, aber wie du sehen wirst, ist das Programm ziemlich großzügig mit dem, was es dich erraten lässt",
   "time_range": [
    99.56,
    105.4
@@ -164,7 +164,7 @@
  {
   "input": "In this case, we try shtick.",
   "model": "nmt",
-  "translatedText": "In diesem Fall versuchen wir es mit shtick.",
+  "translatedText": "In diesem Fall versuchen wir es mit "shtick".",
   "time_range": [
    106.2,
    107.44
@@ -173,7 +173,7 @@
  {
   "input": "And alright, things are looking pretty good.",
   "model": "nmt",
-  "translatedText": "Und gut, es sieht ziemlich gut aus.",
+  "translatedText": "Und siehe da, es sieht ziemlich gut aus.",
   "time_range": [
    108.78,
    110.18
@@ -182,7 +182,7 @@
  {
   "input": "We hit the S and the H, so we know the first three letters, we know that there's an R.",
   "model": "nmt",
-  "translatedText": "Wir drücken das S und das H, damit wir die ersten drei Buchstaben kennen und wissen, dass es ein R gibt.",
+  "translatedText": "Wir geben S und H ein. Wir kennen die ersten drei Buchstaben wissen, dass es ein R gibt.",
   "time_range": [
    110.26,
    113.98
@@ -191,7 +191,7 @@
  {
   "input": "And so it's going to be like S-H-A something R, or S-H-A R something.",
   "model": "nmt",
-  "translatedText": "Und so wird es wie SHA irgendetwas R oder SHA R irgendetwas sein.",
+  "translatedText": "Und so wird es S-H-A irgendetwas R oder S-H-A-R irgendetwas sein.",
   "time_range": [
    113.98,
    118.7
@@ -200,7 +200,7 @@
  {
   "input": "And it looks like the Wurdle bot knows that it's down to just two possibilities, either shard or sharp.",
   "model": "nmt",
-  "translatedText": "Und es sieht so aus, als ob der Wurdle-Bot weiß, dass es nur auf zwei Möglichkeiten ankommt: entweder Shard oder Sharp.",
+  "translatedText": "Und es sieht so aus, als ob der Wordle-Bot weiß, dass es nur auf zwei Möglichkeiten gibt: entweder "Shard" oder "Sharp".",
   "time_range": [
    119.62,
    124.24
@@ -209,7 +209,7 @@
  {
   "input": "That's kind of a toss up between them at this point, so I guess probably just because it's alphabetical it goes with shard.",
   "model": "nmt",
-  "translatedText": "Das ist im Moment eine Art Streit zwischen ihnen, also denke ich, dass es wahrscheinlich nur, weil es alphabetisch ist, mit Shard zusammenhängt.",
+  "translatedText": "Das ist im Moment eine Art hin und her zwischen den beiden, also beginne ich, weil es alphabetisch ist, mit "SHARD".",
   "time_range": [
    125.1,
    130.08
@@ -218,7 +218,7 @@
  {
   "input": "Which hooray, is the actual answer.",
   "model": "nmt",
-  "translatedText": "Hurra, ist die eigentliche Antwort.",
+  "translatedText": "welche, Hurra, tatsächlich die Antwort ist.",
   "time_range": [
    131.22,
    132.86
@@ -227,7 +227,7 @@
  {
   "input": "So we got it in three.",
   "model": "nmt",
-  "translatedText": "Also haben wir es in drei geschafft.",
+  "translatedText": "Also haben wir es in drei Zügen geschafft.",
   "time_range": [
    132.96,
    133.78
@@ -236,7 +236,7 @@
  {
   "input": "If you're wondering if that's any good, the way I heard one person phrase it is that with Wurdle four is par and three is birdie.",
   "model": "nmt",
-  "translatedText": "Wenn Sie sich fragen, ob das etwas nützt: Ich habe jemanden sagen hören, dass bei Wurdle vier Par und drei Birdie sind.",
+  "translatedText": "Wenn Sie sich fragen, ob das etwas nützt: Ich habe jemanden sagen hören, dass bei Wordle vier "par" und drei "birdie" entspricht.",
   "time_range": [
    134.6,
    140.36
@@ -263,7 +263,7 @@
  {
   "input": "But when you get it in three, it just feels great.",
   "model": "nmt",
-  "translatedText": "Aber wenn man es in drei Teilen bekommt, fühlt es sich einfach großartig an.",
+  "translatedText": "Aber wenn man es in drei Zügen hinbekommt, fühlt es sich einfach großartig an.",
   "time_range": [
    147.18,
    149.92
@@ -272,7 +272,7 @@
  {
   "input": "So if you're down for it, what I'd like to do here is just talk through my thought process from the beginning for how I approach the Wurdle bot.",
   "model": "nmt",
-  "translatedText": "Wenn Sie also Lust darauf haben, möchte ich hier einfach meinen Denkprozess von Anfang an besprechen, wie ich an den Wurdle-Bot herangehe.",
+  "translatedText": "Wenn Sie also Lust darauf haben, möchte ich hier einfach meinen Denkprozess von Anfang an erzählen, wie ich an den Wordle-Bot herangehe.",
   "time_range": [
    150.88,
    155.96
@@ -281,7 +281,7 @@
  {
   "input": "And like I said, really it's an excuse for an information theory lesson.",
   "model": "nmt",
-  "translatedText": "Und wie ich schon sagte, es ist eigentlich ein Vorwand für eine Lektion in Informationstheorie.",
+  "translatedText": "Und wie ich schon sagte, ist es eigentlich nur eine Ausrede für eine Lektion in Informationstheorie.",
   "time_range": [
    156.48,
    159.44
